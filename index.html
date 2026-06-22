@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barcode & QR Code Scanner App</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #0f172a, #1e3a8a);
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.08);
+            padding: 50px;
+            border-radius: 25px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+            width: 90%;
+            max-width: 600px;
+        }
+
+        .title {
+            font-size: 42px;
+            color: white;
+            font-weight: bold;
+            margin-bottom: 15px;
+            line-height: 1.3;
+        }
+
+        .highlight {
+            color: #38bdf8;
+        }
+
+        .subtitle {
+            color: #d1d5db;
+            font-size: 18px;
+            margin-bottom: 35px;
+            line-height: 1.6;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 18px 40px;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            background: linear-gradient(135deg, #06b6d4, #2563eb);
+            border-radius: 12px;
+            transition: 0.3s ease;
+            box-shadow: 0 10px 25px rgba(37, 99, 235, 0.4);
+        }
+
+        .download-btn:hover {
+            transform: translateY(-4px) scale(1.03);
+            box-shadow: 0 15px 35px rgba(37, 99, 235, 0.6);
+        }
+
+        .icon {
+            font-size: 70px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="icon">📦</div>
+
+        <h1 class="title">
+            Barcode & <span class="highlight">QR Code</span><br>
+            Scanner App
+        </h1>
+
+        <p class="subtitle">
+            Fast, Secure & Smart Inventory Scanning Solution.<br>
+            Download the desktop application and start scanning instantly.
+        </p>
+
+        <!-- Replace setup.exe with your EXE file name -->
+        <a href="setup.exe" download class="download-btn">
+            ⬇ Download Application
+        </a>
+
+    </div>
+
+</body>
+
+</html>
